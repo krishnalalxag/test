@@ -44,7 +44,7 @@ and convert that ADC voltage into battery level Indication (Based on Battery dra
 
 # B) How to use the component:
 
-__1. Add the BHM component to the COMPONENT folder, add BHM into the COMPONENT CMakeLists , and include bhm.c header into the main program.__
+__1. Add the BHM component to the COMPONENT folder, add BHM into the COMPONENT CMakeLists , and include bhm header file into the main program.__
    ```
          #include"bhm.h" 
    ```
@@ -53,7 +53,7 @@ __2. First Initialise the Battery_Health_Monitor by using the following API__
          void battery_health_measuring_initialisations();
    ```
 Note:
-The above API will install the ADC1_DRIVER to measure the ADC voltage for GPIO_PIN. 
+The above API will install the ADC1_DRIVER to measure the ADC voltage for GPIO_PIN_34. 
 
 __3. After Initialisation,call the Battery_Health_Monitor API to know the Battery Percentage across the GPIO_34__
   ```
@@ -69,7 +69,7 @@ __4. Then deinitialise the power to the ADC1_DRIVER by calling following API__
         void bhm_deinit();
    ```
 # c) Fault_Analysis
-this should be added for future purposes
+__This should be added for future purposes.__
 
 
 
