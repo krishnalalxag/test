@@ -46,7 +46,7 @@ and convert that ADC voltage into battery level Indication (Based on Battery dra
 
 __1. Add the BHM component to the COMPONENT folder, add BHM into the COMPONENT CMakeLists , and include bhm.c header into the main program.__
    ```
-         void(); 
+         #include"bhm.h" 
    ```
 __2. First Initialise the Battery_Health_Monitor by using the following API__ 
    ```
@@ -68,7 +68,8 @@ __4. Then deinitialise the power to the ADC1_DRIVER by calling following API__
    ```
         void bhm_deinit();
    ```
-__________________________________________________________________________________________________________
+# c) Fault_Analysis
+this should be added for future purposes
 
 
 
