@@ -4,9 +4,9 @@ This is a Readme file for Battery_Health_Monitor (BHM) COMPONENT.
 Implementation is based on the [Documentation reference](https://docs.espressif.com/projects/esp-idf/en/v4.1.1/api-reference/peripherals/adc.html).
 
 
-|Date|27-12-2023|
+|Date|28-12-2023|
 |:-:|:-:|
-|Responsible|[KRISHNA.TL](krishna.tl@xaglabs.com)|
+|Responsible|KRISHNA.TL|
 |Reviewed by|SHRUTHI.KR|
 |SUPPORTED_DEVICES|only ESP_32 CONTROLLERS|
 
@@ -26,10 +26,12 @@ and convert that ADC voltage into battery level Indication (Based on Battery dra
 
  where voltage divider resistors (R1,R2) 
 
+![Image alt text](voltage_divider.jpeg)
+
  R1=200Kohm,
  R2=810Kohm (voltage across is connected to GPIO_34),
 
- Note: R1 (lowest resistor) and R2 (highest resistor – 4xR1) maybe represented with different indicators, e.g R(), R(m), etc.. 
+ Note: R1 (lowest resistor) and R2 (highest resistor – 4xR1) maybe represented with different indicators, e.g R(n), R(m), etc.. 
 
  If you want to try different resistors and batteries with different threshold levels (e.g 3.6V, 5.1V, etc..), please refer to the following excel sheet and change the variables based on the values calculated in the below excel sheet.
 
