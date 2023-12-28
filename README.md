@@ -25,7 +25,7 @@ and convert that ADC voltage into battery level Indication (Based on Battery dra
 |battery used|![Image alt text](duracell_image.jpeg)|
 
  where voltage divider resistors (R1,R2) 
-
+![Image alt text](voltage_divider.jpeg)
  R1=200Kohm,
  R2=810Kohm (voltage across is connected to GPIO_34),
 
