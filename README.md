@@ -26,10 +26,11 @@ and convert that ADC voltage into battery level Indication (Based on Battery dra
 
  where voltage divider resistors (R1,R2) 
 
-![Image alt text](voltage_divider.jpeg)
+   ![Image alt text](voltage_divider.jpeg)
 
  R1=200Kohm,
- R2=810Kohm (voltage across is connected to GPIO_34),
+ 
+ R2=810Kohm (voltage across R2 is connected to GPIO_34),
 
  Note: R1 (lowest resistor) and R2 (highest resistor – 4xR1) maybe represented with different indicators, e.g R(n), R(m), etc.. 
 
