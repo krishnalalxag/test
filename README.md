@@ -4,9 +4,9 @@ This is a Readme file for Battery_Health_Monitor (BHM) COMPONENT.
 Implementation is based on the [Documentation reference](https://docs.espressif.com/projects/esp-idf/en/v4.1.1/api-reference/peripherals/adc.html).
 
 
-|Date|27-12-2023|
+|Date|28-12-2023|
 |:-:|:-:|
-|Responsible|[KRISHNA.TL](krishna.tl@xaglabs.com)|
+|Responsible|KRISHNA.TL|
 |Reviewed by|SHRUTHI.KR|
 |SUPPORTED_DEVICES|only ESP_32 CONTROLLERS|
 
