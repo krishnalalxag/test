@@ -68,7 +68,40 @@ __4. Then deinitialise the power to the ADC1_DRIVER by calling following API__
    ```
         void bhm_deinit();
    ```
-# c) Fault_Analysis
+
+# C) how to add component in your project:
+1. let us take a component named as abc,and the below will show how to add the abc component to project.
+```
+├── build
+├── components
+|   ├──abc       // this is the abc component folder contains abc.c, abc.h, README.md, CMakelists.txt and test procudere
+|   ├──abc.h    // place the abc.h from the abc component folder 
+|   └──CMakeLists.txt 
+├── main
+│   ├── CMakeLists.txt
+│   └── main.c
+└── README.md                  This is the file you are currently reading
+```
+
+2. now move on to component CMakeLists.txt, there edit With below txt
+```
+idf_component_register(SRCS "abc/abc.h" 
+                    INCLUDE_DIRS "."
+                    PRIV_REQUIRES driver)
+```
+3. now, you want add another component named as cab, then follow the first step as discussed and add edit cmakelist as follow
+```
+idf_component_register(SRCS "abc/abc.h" "cab/cab.h"
+                    INCLUDE_DIRS "."
+                    PRIV_REQUIRES driver)
+```
+4. after completing all the above process, now build the program, if error persists then go to the esp-idf documentation 
+```
+idf_component_register(SRCS "abc/abc.h" "cab/cab.h"
+                    INCLUDE_DIRS "."
+                    PRIV_REQUIRES driver abc_driver cab_driver)
+```
+# D) Fault_Analysis
 __This should be added for future purposes.__
 
 
