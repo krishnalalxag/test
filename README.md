@@ -60,7 +60,7 @@ __3. After Initialisation,call the Battery_Health_Monitor API to know the Batter
          int batteryhealthmonitor();
   ```
 Note:
-The above API calculates the battery percentage for an average of 50 READINGs across the GPIO_34.(Default pin is set to 34)`
+The above API calculates the battery percentage for an average of 50 READINGs across the GPIO_34.(Default pin is set to 34)
 
 `@note: In order to change the GPIO_PIN to different pin, use the link to replace ADC1_CHANNEL_6 with any` [analog pin](https://docs.espressif.com/projects/esp-idf/en/v4.1.1/api-reference/peripherals/adc.html#enumerations)                    
 
