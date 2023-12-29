@@ -56,7 +56,7 @@ and convert that ADC voltage into battery level Indication (Based on Battery dra
 
 # B) How to use the component: 
 
- __1. Add the BHM component to the COMPONENT folder, add BHM into the COMPONENT CMakeLists , and include bhm header file into the main program.__ 
+ __1. Add the BHM component to the COMPONENT folder, add BHM into the COMPONENT CMakeLists , and include bhm `header` file into the main program.__ 
 
    ``` 
 
@@ -108,7 +108,7 @@ __4. Then deinitialise the power to the ADC1_DRIVER by calling following API__
 
 # C) How to add a component to your project: 
 
-__1. Let us take a component named as ‘abc’. Follow the steps below to add the ‘abc’ component to your project.__ 
+__1. Let us take a component named as `abc`. Follow the steps below to add the `abc` component to your project.__ 
 
 ``` 
 
@@ -134,7 +134,7 @@ __1. Let us take a component named as ‘abc’. Follow the steps below to add t
 
  
 
-__2. Open the ‘CMakeLists.txt’ file in the ‘abc’ component folder and edit with the below text.__ 
+__2. Open the `CMakeLists.txt` file in the `abc` component folder and edit with the below text.__ 
 
 ``` 
 
@@ -146,7 +146,7 @@ idf_component_register(SRCS "abc/abc.c"
 
 ``` 
 
-__3. If adding another component to existing ‘CMakeLists.txt file’, first follow Step 1 as above and then edit the existing ‘CMakeList.txt’ with the following text. For this example, we will add another component named ‘xyz’__ 
+__3. If adding another component to existing `CMakeLists.txt file`, first follow Step 1 as above and then edit the existing `CMakeList.txt` with the following text. For this example, we will add another component named `xyz`.__ 
 
 ``` 
 
