@@ -138,7 +138,7 @@ __2. Open the ‘CMakeLists.txt’ file in the ‘abc’ component folder and ed
 
 ``` 
 
-idf_component_register(SRCS "abc/abc.h"  
+idf_component_register(SRCS "abc/abc.c"  
 
                     INCLUDE_DIRS "." 
 
@@ -150,7 +150,7 @@ __3. If adding another component to existing ‘CMakeLists.txt file’, first fo
 
 ``` 
 
-idf_component_register(SRCS "abc/abc.h" "xyz/xyz.h" 
+idf_component_register(SRCS "abc/abc.c" "xyz/xyz.c" 
 
                     INCLUDE_DIRS "." 
 
@@ -162,7 +162,7 @@ __4. After completing the above process, build the program. If error persists, t
 
 ``` 
 
-idf_component_register(SRCS "abc/abc.h" "xyz/xyz.h" 
+idf_component_register(SRCS "abc/abc.c" "xyz/xyz.c" 
 
                     INCLUDE_DIRS "." 
 
