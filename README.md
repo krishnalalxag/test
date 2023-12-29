@@ -172,9 +172,20 @@ idf_component_register(SRCS "abc/abc.c" "xyz/xyz.c"
 
 # D) Fault_Analysis 
 
-__This will be added in future .__ 
-
- 
+__1.watchdog_triggering__
+```
+E (10345) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (10345) task_wdt:  - IDLE (CPU 0)
+E (10345) task_wdt: Tasks currently running:
+E (10345) task_wdt: CPU 0: main
+E (10345) task_wdt: CPU 1: IDLE
+E (10345) task_wdt: Print CPU 0 (current core) backtrace
+```
+ __Then_use_the_following_configurations_in_menuconfig___
+`menuconfig`->`Component config`->`ESP_RINGBUFF`->`Trace memory`.
+disable the below configurations
+- Interrupt watchdog
+- Initialize Task Watchdog Timer on startup
 
  
 
