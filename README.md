@@ -14,7 +14,7 @@ Implementation is based on the [Documentation reference](https://docs.espressif.
 |:-:|:-:| 
 |Responsible|KRISHNA.TL| 
 |Reviewed by|SHRUTHI.KR| 
-|SUPPORTED_DEVICES|only ESP_32 CONTROLLERS| 
+|SUPPORTED_DEVICES|only ESP_32-WROOM-32E CONTROLLERS| 
 
  
 
